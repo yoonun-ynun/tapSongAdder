@@ -22,7 +22,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   let reactNativeFactory: RCTReactNativeFactory
 
   override init() {
-    super.init()
 
     let delegate = ReactNativeDelegate()
     let factory = RCTReactNativeFactory(delegate: delegate)
@@ -30,6 +29,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     reactNativeDelegate = delegate
     reactNativeFactory = factory
+    super.init()
   }
 }
 
